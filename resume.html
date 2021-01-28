@@ -9,12 +9,15 @@
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <title>Personal Website</title>
+    <!--head-->
+    <div id="head-placeholder"></div>
+    <script> $(function(){ $("#head-placeholder").load("head.html"); });</script>
+    <!-------->
     
   </head>
   <body>
@@ -34,8 +37,8 @@
                     <p>
                         (818) 331-8105 <br>
                         btanusi@gmail.com <br>
-                        <a class="nav-link" href="https://www.linkedin.com/in/btanusi/">Linkedin</a>
-                        <a class="nav-link" href="https://github.com/btanusi">Github</a>
+                        <a href="https://www.linkedin.com/in/btanusi/">Linkedin</a> <br>
+                        <a href="https://github.com/btanusi">Github</a>
                     </p>
                     <h3>Education</h3>
                     <p>
@@ -67,7 +70,7 @@
                     </p>
                     <h3>Leadership</h3>
                     <h5>UCLA Women in Engineering Leadership Academy</h5>
-                    <p class="lead">
+                    <p class="subheader">
                         <i>
                             Graduate <br>
                             September 2019 — February 2020
@@ -75,7 +78,7 @@
                     </p>
                     <p>Established a community among female engineers at UCLA while strengthening team management, networking, communication, and leadership skills.</p>
                     <h5>University Catholic Conference of California 2020</h5>
-                    <p class="lead">
+                    <p class="subheader">
                         <i>
                             Accommodations Chair <br>
                             February 2019 — February 2020
@@ -88,7 +91,7 @@
                     <h5>United States Air and Space Force</h5>
                     <h5>Space and Missile Systems Center, El Segundo, CA</h5>
                     <h5>Chief Information Office</h5>
-                    <p class="lead">
+                    <p class="subheader">
                         Computer Scientist, Palace Acquire Program <br>
                         <i>August 2020 — Present</i>
                     </p>
@@ -97,7 +100,7 @@
                         <li>Advanced the supply chain risk management of programs by coordinating contracting efforts to improve visibility into the supply chain and provide rapid analysis.</li>
                         <li>Solidified responsibilities and capabilities of the Cyber Support Operations Center to manage the tracking of mission system cyber vulnerability assessments.</li>
                     </ul>
-                    <p class="lead">
+                    <p class="subheader">
                         Computer Scientist, Premier College Intern Program <br>
                         <i>June — September 2019</i>
                     </p>
@@ -112,8 +115,8 @@
 
                     <h3>Computer Science Projects</h3>
                     <h5>Aggregate Tasker Administration Tool</h5>
-                    <p class="lead">
-                        <i>React.js, Express.js, PostgreSQL — January 2021</i>
+                    <p class="subheader">
+                        <i>React, Express, PostgreSQL — January 2021</i>
                     </p>
                     <ul>
                         <li>Prototyped an optimized version of the Department of Defense’s Task Management Tool.</li>
@@ -122,7 +125,7 @@
                         <li>Deployed onto the Department of Defense’s Platform One.</li>
                     </ul>
                     <h5>Distributed Database</h5>
-                    <p class="lead">
+                    <p class="subheader">
                         <i>Go — May 2020</i>
                     </p>
                     <ul>
@@ -130,6 +133,17 @@
                         <li>Designed partitioning so that database actions perform in parallel on different servers, thus increasing performance.</li>
                         <li>Engineered a configuration service to maintain load balancing of database storage across partitions.</li>
                         <li>Ensured fault-tolerance by applying the Paxos protocol for consensus to replicas of all components.</li>
+                    </ul>
+                    <h5>
+                      <a href="https://www.gliaapp.com">Glia</a>
+                    </h5>
+                    <p class="subheader">
+                        <i>Express, Mongo — March 2019</i>
+                    </p>
+                    <ul>
+                        <li>Created a mental health “gratitude journal” web app aimed at encouraging students to focus on the positive.</li>
+                        <li>Programmed an API using Express to access a custom Mongo database for the user’s journal entries.</li>
+                        <li>Collaborated with designers and software developers for the conception and implementation.</li>
                     </ul>
                 </div>
               </div>
