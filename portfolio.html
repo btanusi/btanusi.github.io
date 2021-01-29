@@ -15,26 +15,86 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!--head-->
-    <div id="head-placeholder"></div>
-    <script> $(function(){ $("#head-placeholder").load("head.html"); });</script>
-    <!-------->
-    
+    <div id="head-placeholder"></div> <script> $(function(){ $("#head-placeholder").load("head.html"); });</script>  
+  
+    <!--Masonry-->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </head>
   <body>
-    <!--navbar-->
-    <div id="nav-placeholder"></div>
-    <script>
-      $(function(){
-        $("#nav-placeholder").load("nav.html");
-      });
-    </script>
-    <!---------->
+    <nav id="nav-placeholder">
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </nav>
+
     <main class="container">
-        <div class="starter-template text-center py-5 px-3">
-            <h1>Art Portfolio</h1>
-            <p class="lead">Welcome to my art portfolio!</p>
+      <section class="starter-template text-center py-5 px-3">
+        <h1>Art Portfolio</h1>
+        <p class="lead">Welcome to my art portfolio! <br> ...this is a work in progress...</p>
+      </section>
+
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/selfie.jpeg">
+          </div>
         </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/who-am-i.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/routine.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/i-dont-speak-indonesian.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/reflection.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/toilet-paper-roll.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/beauty-bones.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/clouds.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/absence.jpeg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/delicate.jpg">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="card">
+            <img src="assets/img/portfolio/fishbowl.jpeg">
+          </div>
+        </div>
+      </div>
+
     </main>
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    
   </body>
 </html>
